@@ -4,8 +4,8 @@ class HieraLoader
     
     attr_accessor :hiera, :scope
 
-    def initialize(scope)
-        @hiera = Hiera.new(:config => "hiera.yaml")
+    def initialize(scope, config = 'hiera.yaml')
+        @hiera = Hiera.new(:config => config)
         @scope = scope
     end
 
