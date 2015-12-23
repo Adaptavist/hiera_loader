@@ -10,6 +10,9 @@ Gem::Specification.new do |s|
     s.homepage    = 'https://github.org/Adaptavist/hiera_loader'
     s.license     = "Apache-2.0"
 
+    spec.add_development_dependency "bundler", "~> 1.6"
+    spec.add_development_dependency "rake"
+
     s.add_dependency 'hiera'
 end
 
